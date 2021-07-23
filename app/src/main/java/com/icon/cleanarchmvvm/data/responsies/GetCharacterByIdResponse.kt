@@ -1,45 +1,45 @@
-package com.icon.cleanarchmvvm
+package com.icon.cleanarchmvvm.data.responsies
 
 
-import com.squareup.moshi.Json
+import com.google.gson.annotations.SerializedName
 
 data class GetCharacterByIdResponse(
-    @Json(name = "created")
+    @SerializedName("created")
     val created: String = "",
-    @Json(name = "episode")
+    @SerializedName("episode")
     val episode: List<Any> = listOf(),
-    @Json(name = "gender")
+    @SerializedName("gender")
     val gender: String = "",
-    @Json(name = "id")
+    @SerializedName("id")
     val id: Int = 0,
-    @Json(name = "image")
+    @SerializedName("image")
     val image: String = "",
-    @Json(name = "location")
+    @SerializedName("location")
     val location: Location = Location(),
-    @Json(name = "name")
+    @SerializedName("name")
     val name: String = "",
-    @Json(name = "origin")
+    @SerializedName("origin")
     val origin: Origin = Origin(),
-    @Json(name = "species")
+    @SerializedName("species")
     val species: String = "",
-    @Json(name = "status")
+    @SerializedName("status")
     val status: String = "",
-    @Json(name = "type")
+    @SerializedName("type")
     val type: String = "",
-    @Json(name = "url")
+    @SerializedName("url")
     val url: String = ""
 ) {
     data class Location(
-        @Json(name = "name")
+        @SerializedName("name")
         val name: String = "",
-        @Json(name = "url")
+        @SerializedName("url")
         val url: String = ""
     )
 
     data class Origin(
-        @Json(name = "name")
+        @SerializedName("name")
         val name: String = "",
-        @Json(name = "url")
+        @SerializedName("url")
         val url: String = ""
     )
 }
