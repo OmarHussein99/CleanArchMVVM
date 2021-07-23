@@ -5,7 +5,7 @@ import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
 import android.os.Build
 
-class NetworkHelper constructor(private val context: Context) {
+class NetworkConnectivity constructor(private val context: Context) {
 
     fun isNetworkConnected(): Boolean {
         var result = false
